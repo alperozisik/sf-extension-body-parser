@@ -62,9 +62,14 @@ function request(options, callback) {
         var buf = Buffer.from(b64string, encoding);
 
         var dataEvent, endEvent;
-
+        
+        var headers = {};
+        for(var i in response.headers) {
+            headers[i.toLowerCase()] = response.headers[i];
+        }
+        
         var res = {
-            headers: response.headers,
+            headers: headers,
             on: function(eventType, callback) {
                 switch (eventType) {
                     case "data":
