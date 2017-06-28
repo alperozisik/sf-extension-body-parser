@@ -1,6 +1,12 @@
 const bodyParser = require("./body-parser");
 const Http = require("sf-core/net/http");
 const Buffer = require("./buffer").Buffer;
+if (!global.window)
+    global.window = global;
+if (typeof global.document === "undefined")
+    global.document = null;
+if (typeof global.navigator === "undefined")
+    global.navigator = null;
 
 const parsers = [];
 

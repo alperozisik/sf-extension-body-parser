@@ -31,9 +31,9 @@ Only followint 3 parsers are supported:
 
 To perform the request, which handles the http.request for you, call the request method
 ```javascript
-bodyParserRequest.request({
-    url: "https://sf-extension-body-parser-alperozisik.c9users.io/",
-    method: "POST"
+bodyParserRequest.request({ //request options are same as in smartface http.request
+    url: "https://jsonplaceholder.typicode.com/posts/1",
+    method: "GET"
 }, function(err, res) {
     if(err) {
         // handle request failure here
