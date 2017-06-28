@@ -1,0 +1,25 @@
+{
+  "name": "sf-extension-body-parser",
+  "version": "1.0.0",
+  "description": "Smartface Extension for Body-Parser equvalent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alperozisik/sf-extension-body-parser.git"
+  },
+  "keywords": [
+    "Smartface",
+    "body-parser",
+    "body",
+    "parser"
+  ],
+  "author": "Alper Ozisik <alper.ozisik@smartface.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alperozisik/sf-extension-body-parser/issues"
+  },
+  "homepage": "https://github.com/alperozisik/sf-extension-body-parser#readme"
+}
